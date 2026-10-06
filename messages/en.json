@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "ShopiBuild | Shopify stores that sell",
+    "description": "Dubai Shopify studio: conversion design, pixel tracking, payments and shipping. Launch in 5–7 days."
+  },
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "pricing": "Pricing",
+    "results": "Results",
+    "faq": "FAQ",
+    "lang": "عربي",
+    "cta": "Book a call"
+  },
+  "hero": {
+    "kicker": "Dubai · Shopify from the ground up",
+    "title": "Your store should sell. Pretty is not the job.",
+    "lead": "We build Shopify stores and portfolio sites that make money — not a page that looks finished and stops there. Design, speed, payments, shipping, and ad tracking in one delivery.",
+    "primary": "Start your project",
+    "secondary": "See packages",
+    "note": "Direct setup for Shopify · Meta · TikTok · Google",
+    "s1": "Stores delivered",
+    "s1n": "100+",
+    "s2": "Days to launch",
+    "s2n": "5–7",
+    "s3": "Team support",
+    "s3n": "24/7"
+  },
+  "panel": {
+    "live": "Store desk",
+    "today": "Today's sales",
+    "delta": "+47.3% vs yesterday",
+    "amount": "18,430",
+    "currency": "AED",
+    "ch": "Channel",
+    "orders": "Orders",
+    "rows": [
+      ["Store", "64"],
+      ["Meta", "31"],
+      ["TikTok", "18"],
+      ["Google", "12"]
+    ],
+    "insight": "Mobile abandoned carts are dropping 23% of orders. WhatsApp recovery is on — about +11 orders expected today.",
+    "badge1": "Sales 3.2×",
+    "badge1s": "After launch day",
+    "badge2": "New order",
+    "badge2s": "AED 849 — 2m ago",
+    "feed": [
+      ["100ml fragrance", "849"],
+      ["Care set", "320"],
+      ["Wireless earbuds", "590"],
+      ["Leather bag", "1,150"]
+    ]
+  },
+  "marquee": "Shopify · Meta · TikTok · Snapchat · Google · WhatsApp · Local payments · Couriers",
+  "cycle": {
+    "label": "The full loop",
+    "title": "Others hand over a theme. We hand over a store that sells.",
+    "lead": "Design, tracking, checkout, and support in one delivery — each piece feeds the next.",
+    "items": [
+      ["Store", "A layout that walks the eye to checkout, fast on a phone, clear for the catalog."],
+      ["Measurement", "Meta, TikTok, and Snap pixels with Conversions API so ad budget is not guesswork."],
+      ["Conversion", "Local payments and shipping, plus email and WhatsApp cart recovery."],
+      ["Operations", "One dashboard, training videos, and support that stays after launch."]
+    ]
+  },
+  "paths": {
+    "label": "Two ways to start",
+    "title": "Same craft. The difference is how far you want to go.",
+    "aTitle": "A store that can sell",
+    "aLead": "Professional design, products, payments, and mobile — live in days.",
+    "aPoints": ["Professional store design", "Up to 100 products on Growth", "Payment gateway and responsive layout", "Video training for orders"],
+    "bTitle": "Growth partner",
+    "bLead": "Tech stack, identity, campaigns, and ongoing conversion work — a remote team beside you.",
+    "bPoints": ["Technical infrastructure", "High-budget ad campaigns", "Ongoing conversion tests", "Two spots a month"],
+    "aCta": "See Foundation",
+    "bCta": "Apply for partnership"
+  },
+  "who": {
+    "label": "Who it's for",
+    "title": "Built for your stage",
+    "cards": [
+      ["Ambitious starter", "You have a product and need a base that sells on day one, without spending the month in code."],
+      ["Growing store", "The store works and conversion does not. You need a rebuild and tracking you can scale on."],
+      ["Established brand", "High margins and a bigger plan. You want one partner on the stack and the campaigns."]
+    ]
+  },
+  "features": {
+    "label": "Services",
+    "title": "Every detail aimed at checkout",
+    "lead": "Nine pieces we put in the store so it stops being a brochure.",
+    "items": [
+      ["Sales-led UI", "The eye reaches the pay button without noise."],
+      ["Fast open", "A delayed second loses a buyer. The store opens in a blink."],
+      ["Pay and ship", "Local and global gateways, synced with couriers."],
+      ["SEO", "Structure, URLs, and metadata built to rank."],
+      ["Pixel tracking", "Meta, TikTok, and Snap with CAPI — ad data stays intact."],
+      ["Mobile first", "Most orders start on a phone. Checkout there is smooth."],
+      ["Abandoned carts", "Email and WhatsApp bring back the order that stalled."],
+      ["One dashboard", "Sales, traffic, and product performance in one view."],
+      ["Training and support", "Videos, docs, and 24/7 support after handoff."]
+    ]
+  },
+  "pricing": {
+    "label": "Packages",
+    "title": "Invest in a digital asset",
+    "lead": "Three stages. One partner. Pick the path.",
+    "popular": "Most chosen",
+    "select": "Select package",
+    "scale": "Scale your sales",
+    "apply": "Apply for partnership",
+    "spots": "Only 2 spots a month",
+    "currency": "AED",
+    "plans": [
+      {
+        "name": "Foundation",
+        "desc": "Launch the idea quickly.",
+        "price": "2,000",
+        "per": "",
+        "features": ["Professional store design", "Up to 20 products", "Payment gateway setup", "Mobile responsive design", "Video management training"]
+      },
+      {
+        "name": "Growth",
+        "desc": "For stores ready to scale steadily.",
+        "price": "3,000",
+        "per": "",
+        "features": ["Everything in Foundation", "Up to 100 products", "Speed and SEO", "Server-side pixel tracking", "Abandoned cart automations"]
+      },
+      {
+        "name": "Growth Partner",
+        "desc": "Tech and marketing, managed together.",
+        "price": "50,000",
+        "per": "/ project",
+        "features": ["Technical infrastructure", "High-budget ad campaigns", "Ongoing CRO and tests", "Dedicated remote team"]
+      }
+    ]
+  },
+  "compare": {
+    "label": "The difference",
+    "title": "A freelancer delivers files. We deliver a store that runs.",
+    "them": "Typical handoff",
+    "us": "ShopiBuild",
+    "rows": [
+      ["Delivery", "A theme and scattered edits", "A store ready to sell: design, pay, ship"],
+      ["Speed", "After you complain", "Measured before launch"],
+      ["Tracking", "A browser pixel that drops", "Pixel + CAPI on Meta, TikTok, and Snap"],
+      ["Mobile", "It shrinks", "A checkout path built for the phone"],
+      ["After launch", "The invoice, then silence", "Training, a dashboard, 24/7 support"],
+      ["Success", "Did you like the look?", "Completed orders in week one"]
+    ]
+  },
+  "reviews": {
+    "label": "Results",
+    "title": "The results speak",
+    "waName": "Ahmed — ShopiBuild client",
+    "online": "online",
+    "msgs": [
+      ["in", "How are things looking after the campaign launch?", "10:15"],
+      ["out", "Sales are moving today. The server is steady and checkout is converting.", "10:18"],
+      ["out", "The path to pay is easy. People finish the order — the journey did that.", "10:19"],
+      ["in", "That is the point. Let's keep scaling.", "10:21"]
+    ],
+    "items": [
+      ["ShopiBuild delivered a store that converted from day one. The pixel setup alone saved thousands in wasted ad spend.", "Mohammed Al-Rashid", "Fashion brand, Dubai"],
+      ["Within two weeks of launch we were profitable. Mobile checkout is smooth — people actually finish orders.", "Sara Khalid", "Beauty and wellness, Sharjah"],
+      ["We left a freelancer who disappeared. They rebuilt the store and revenue tripled in the first month.", "Khaled Mansour", "Electronics, Abu Dhabi"]
+    ]
+  },
+  "faq": {
+    "label": "Questions",
+    "title": "Questions, answered.",
+    "items": [
+      ["How long until the store is delivered?", "Foundation and Growth usually take 5–7 business days from the day we have your products and content. Growth Partner needs a deeper plan on the discovery call."],
+      ["Do I need to code to run the store?", "No. You get a clear dashboard and recorded videos for orders, new products, and edits."],
+      ["What does the AED 50,000 Growth Partner package include?", "A strategic partnership: infrastructure from scratch, identity, and high-budget campaigns. We work as your dedicated tech and marketing team."],
+      ["Do you run ads on their own?", "Yes, for clients with product-market fit and at least $5,000 in monthly ad spend. Book a call and we will say if it fits."],
+      ["How do I start?", "A free 15-minute discovery call. We learn the project and recommend the package so you can start."]
+    ]
+  },
+  "book": {
+    "label": "Start",
+    "title": "Start with your store's numbers.",
+    "lead": "A short call, not a sales pitch. We name the package, the scope, and the plan.",
+    "points": ["15 minutes, no commitment", "We recommend a package on the call", "Launch within days of kickoff"],
+    "first": "First name",
+    "last": "Last name",
+    "phone": "Mobile",
+    "site": "Store or idea",
+    "spend": "Monthly ad spend",
+    "spendPh": "Choose a range",
+    "spends": ["Under $4,000", "$4,000–$10,000", "$10,000–$50,000", "Over $50,000"],
+    "submit": "Request the call",
+    "reply": "We reply within one business day.",
+    "done": "We have your request. Expect a reply within one business day."
+  },
+  "footer": {
+    "blurb": "Digital assets that produce real revenue for UAE stores.",
+    "services": "Services",
+    "company": "Company",
+    "s1": "Store development",
+    "s2": "SEO and tracking",
+    "s3": "Ad management",
+    "s4": "Conversion",
+    "c1": "Pricing",
+    "c2": "Results",
+    "c3": "Book a call",
+    "copy": "© 2026 ShopiBuild · Dubai, UAE"
+  }
+}
