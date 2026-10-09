@@ -52,7 +52,21 @@
       ["Leather bag", "1,150"]
     ]
   },
+  "partners": {
+    "label": "Our partners",
+    "title": "Brands we have built with"
+  },
   "marquee": "Shopify · Meta · TikTok · Snapchat · Google · WhatsApp · Local payments · Couriers",
+  "stages": {
+    "label": "Three stages",
+    "title": "From store to sales, in three stages",
+    "lead": "The path does not start with ads. We build one stage, then the next.",
+    "items": [
+      ["Store and measurement", "We launch the store, payments, and shipping, and install tracking before a dirham of ads is spent."],
+      ["Test and learn", "We watch orders, carts, and mobile, and fix what stops the sale before the budget grows."],
+      ["Sales and scale", "Once the base holds, we expand the catalog and campaigns on the store's own numbers."]
+    ]
+  },
   "cycle": {
     "label": "The full loop",
     "title": "Others hand over a theme. We hand over a store that sells.",
@@ -188,7 +202,8 @@
     "site": "Store or idea",
     "spend": "Monthly ad spend",
     "spendPh": "Choose a range",
-    "spends": ["Under $4,000", "$4,000–$10,000", "$10,000–$50,000", "Over $50,000"],
+    "spends": ["Under 15,000 AED", "15,000–40,000 AED", "40,000–180,000 AED", "Over 180,000 AED"],
+    "error": "The request did not go through. Try again.",
     "submit": "Request the call",
     "reply": "We reply within one business day.",
     "done": "We have your request. Expect a reply within one business day."

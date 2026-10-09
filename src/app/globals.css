@@ -39,7 +39,13 @@ body {
   from { transform: translateX(0); }
   to { transform: translateX(50%); }
 }
+.logo-marquee {
+  display: flex;
+  width: max-content;
+  animation: slide 40s linear infinite;
+}
+.logo-marquee:hover { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) {
-  .marquee { animation: none; }
+  .marquee, .logo-marquee { animation: none; }
   html { scroll-behavior: auto; }
 }

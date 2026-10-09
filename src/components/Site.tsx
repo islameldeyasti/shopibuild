@@ -13,57 +13,10 @@ function formatAmount(value: number, arabic: boolean) {
 
 function Brand({ name }: { name: string }) {
   return (
-    <span className="flex items-center gap-2 text-[15px] font-semibold tracking-tight text-ink/80">
-      <Logo name={name} />
+    <span className="flex h-10 w-36 shrink-0 items-center justify-center gap-2 text-[15px] font-semibold tracking-tight text-ink">
+      <img src={`/brands/${name.toLowerCase()}.svg`} alt="" className="h-6 w-6 object-contain" />
       {name}
     </span>
-  );
-}
-
-function Logo({ name }: { name: string }) {
-  const common = "h-6 w-6 shrink-0";
-  if (name === "Shopify") {
-    return (
-      <svg className={common} viewBox="0 0 24 24" aria-hidden>
-        <path fill="#95BF47" d="M15.3 3.2s-.2 0-.4.1l-.7 2.2c-.4-.1-.9-.2-1.4-.2-.1 0-.2 0-.3.1L11.8 3c-.3-.1-.6.1-.7.4L9.6 8.2c-.5.2-.9.4-1.2.6-.8.6-.8 1.3-.9 1.7L6.2 19.2c0 .2.1.4.3.5.2.1 2.4.7 6.4.7h.3c4-.1 6.2-.6 6.4-.7.2-.1.3-.3.3-.5l-1.3-8.7c0-.4-.1-1.1-.9-1.7-.2-.1-.5-.3-.9-.5L15.9 3.6c0-.2-.2-.4-.6-.4zm-2.6 2.4 1.1 3.4c-.6.2-1.2.4-1.7.5l.6-3.9zm-1.4.6.7 4.2c-.8.2-1.6.5-2.2.8l1.5-5zm4.2 8.6c-.3.1-1.6.8-1.8.8-.2.1-.4 0-.4-.4v-2.2l-1.2.4c.1 1.5.2 2.7.2 2.8 0 .5-.3.7-.7.8-1 .3-2.1.1-3.1-.4.3-.8.8-1.6 1.3-2.4.6-.9 1.1-1.5.9-2.3-.1-.6-.7-.9-1.3-1 .8-.9 2.2-1.4 3.4-1.4.5 0 1 .1 1.4.2l.6 1.8c.5-.2 1-.3 1.3-.3.9 0 1.4.6 1.5 1.6.1 1.2-.6 2-1.1 2.6z" />
-      </svg>
-    );
-  }
-  if (name === "Meta") {
-    return (
-      <svg className={common} viewBox="0 0 24 24" aria-hidden>
-        <path fill="#0668E1" d="M7.2 8.2c1.2 0 2.3.6 3.4 1.8.7.8 1.3 1.8 1.4 1.8s.7-1 1.4-1.8c1.1-1.2 2.2-1.8 3.4-1.8 2.2 0 3.7 1.6 3.7 4.3 0 2.8-1.8 6.3-3.6 6.3-1 0-1.7-.7-2.8-2.3l-1.1-1.6-1.1 1.6c-1.1 1.6-1.8 2.3-2.8 2.3-1.8 0-3.6-3.5-3.6-6.3 0-2.7 1.5-4.3 3.7-4.3zm0 1.5c-1.2 0-2.2 1.2-2.2 2.8 0 2.1 1.3 4.8 2.1 4.8.5 0 1-.6 1.8-1.8l1.1-1.7 1.1 1.7c.8 1.2 1.3 1.8 1.8 1.8.8 0 2.1-2.7 2.1-4.8 0-1.6-1-2.8-2.2-2.8-1 0-1.7.7-2.8 2.1L12 12.2l-.2-.4c-1.1-1.4-1.8-2.1-2.8-2.1z" />
-      </svg>
-    );
-  }
-  if (name === "TikTok") {
-    return (
-      <svg className={common} viewBox="0 0 24 24" aria-hidden>
-        <path fill="#111" d="M14.2 3.2c.4 2.4 1.7 4 4 4.4v2.5c-1.4 0-2.7-.4-3.9-1.2v5.8c0 3.6-2.8 6.5-6.5 6.5S1.3 18.3 1.3 14.7c0-3.5 2.6-6.3 6-6.5v2.7c-1.6.2-2.9 1.6-2.9 3.3 0 1.9 1.5 3.4 3.4 3.4s3.4-1.5 3.4-3.4V3.2h3z" transform="translate(2.2 0)" />
-      </svg>
-    );
-  }
-  if (name === "Snapchat") {
-    return (
-      <svg className={common} viewBox="0 0 24 24" aria-hidden>
-        <path fill="#FFFC00" stroke="#111" strokeWidth="0.6" d="M12 3.2c2.2 0 3.6 1.6 3.6 3.8 0 .5.1 1.3.4 1.7.5.6 1.6.5 2 .8.3.2.2.7-.2.9-.8.3-1.2.8-1.1 1.4.1.4.6.6 1.2.8.5.2.7.6.3 1-.7.6-1.6.8-2.1 1.3-.3.3-.2.8.2 1.1.7.4.6 1-.1 1.2-.9.3-1.5.1-2-.3-.4-.3-1 .1-1.6.1s-1.2-.4-1.6-.1c-.5.4-1.1.6-2 .3-.7-.2-.8-.8-.1-1.2.4-.3.5-.8.2-1.1-.5-.5-1.4-.7-2.1-1.3-.4-.4-.2-.8.3-1 .6-.2 1.1-.4 1.2-.8.1-.6-.3-1.1-1.1-1.4-.4-.2-.5-.7-.2-.9.4-.3 1.5-.2 2-.8.3-.4.4-1.2.4-1.7 0-2.2 1.4-3.8 3.6-3.8z" />
-      </svg>
-    );
-  }
-  if (name === "Google") {
-    return (
-      <svg className={common} viewBox="0 0 24 24" aria-hidden>
-        <path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4c-.2 1.2-.9 2.3-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z" />
-        <path fill="#34A853" d="M12 22c2.7 0 5-0.9 6.6-2.5l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6C4.7 19.8 8.1 22 12 22z" />
-        <path fill="#FBBC05" d="M6.4 13.9A6 6 0 0 1 6.1 12c0-.7.1-1.3.3-1.9V7.5H3.1A10 10 0 0 0 2 12c0 1.6.4 3.1 1.1 4.5l3.3-2.6z" />
-        <path fill="#EA4335" d="M12 6.1c1.5 0 2.8.5 3.8 1.5l2.8-2.8C16.9 3.1 14.7 2 12 2 8.1 2 4.7 4.2 3.1 7.5l3.3 2.6c.8-2.3 3-4 5.6-4z" />
-      </svg>
-    );
-  }
-  return (
-    <svg className={common} viewBox="0 0 24 24" aria-hidden>
-      <path fill="#25D366" d="M12 3.2A8.7 8.7 0 0 0 4.4 16.3L3.2 21l4.8-1.2A8.7 8.7 0 1 0 12 3.2zm5 12.3c-.2.6-1.2 1.1-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.8-.2-1.4-.5-2.4-1-4-3.5-4.1-3.7-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .5.4.2.6.7 2 .7 2.1.1.1 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.2.3.7 1.1 1.4 1.8.9.8 1.7 1.1 2 .1.1-.2.3-.3.5-.2l1.2.6c.2.1.4.2.4.3.1.2.1.8-.1 1.4z" />
-    </svg>
   );
 }
 
@@ -74,6 +27,8 @@ export function Site() {
   const other = locale === "ar" ? "en" : "ar";
   const [faq, setFaq] = useState(0);
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [formError, setFormError] = useState(false);
   const [menu, setMenu] = useState(false);
   const [revenue, setRevenue] = useState(0);
   const [barsOn, setBarsOn] = useState(false);
@@ -81,7 +36,7 @@ export function Site() {
   const [shownMsgs, setShownMsgs] = useState(1);
 
   const links = [
-    ["#cycle", t("nav.work")],
+    ["#stages", t("nav.work")],
     ["#services", t("nav.services")],
     ["#pricing", t("nav.pricing")],
     ["#results", t("nav.results")],
@@ -97,6 +52,7 @@ export function Site() {
   }[];
   const features = t.raw("features.items") as [string, string][];
   const cycle = t.raw("cycle.items") as [string, string][];
+  const stages = t.raw("stages.items") as [string, string][];
   const who = t.raw("who.cards") as [string, string][];
   const rows = t.raw("compare.rows") as [string, string, string][];
   const reviews = t.raw("reviews.items") as [string, string, string][];
@@ -291,6 +247,25 @@ export function Site() {
           </div>
         </div>
 
+        <section id="stages" className="bg-white py-20">
+          <div className="mx-auto max-w-6xl px-5">
+            <p className="text-center text-sm font-semibold text-green-deep">{t("stages.label")}</p>
+            <h2 className="mx-auto mt-3 max-w-3xl text-center text-3xl font-semibold tracking-tight sm:text-4xl">
+              {t("stages.title")}
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-center text-muted">{t("stages.lead")}</p>
+            <div className="mt-12 grid gap-4 md:grid-cols-3">
+              {stages.map(([title, body], i) => (
+                <article key={title} className="rounded-3xl border border-line bg-paper p-6">
+                  <p className="text-4xl font-semibold text-ink/20">{String(i + 1).padStart(2, "0")}</p>
+                  <h3 className="mt-6 text-lg font-semibold">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">{body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="cycle" className="mx-auto max-w-6xl px-5 py-20">
           <p className="text-sm font-semibold text-green-deep">{t("cycle.label")}</p>
           <h2 className="mt-2 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">{t("cycle.title")}</h2>
@@ -419,25 +394,23 @@ export function Site() {
           <div className="mx-auto max-w-6xl px-5">
             <p className="text-sm font-semibold text-green-deep">{t("compare.label")}</p>
             <h2 className="mt-2 max-w-2xl text-3xl font-semibold tracking-tight">{t("compare.title")}</h2>
-            <div className="mt-8 overflow-x-auto rounded-3xl border border-line">
-              <table className="w-full min-w-[640px] text-sm">
-                <thead>
-                  <tr className="bg-paper text-start">
-                    <th className="p-4 font-medium" />
-                    <th className="p-4 font-medium text-muted">{t("compare.them")}</th>
-                    <th className="p-4 font-semibold text-green-deep">{t("compare.us")}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {rows.map(([k, a, b]) => (
-                    <tr key={k} className="border-t border-line">
-                      <th className="p-4 text-start font-semibold">{k}</th>
-                      <td className="p-4 text-muted">{a}</td>
-                      <td className="p-4">{b}</td>
-                    </tr>
+            <div className="mt-8 grid gap-4 lg:grid-cols-2">
+              <article className="rounded-[28px] border border-line bg-white p-8">
+                <h3 className="text-xl font-semibold">{t("compare.them")}</h3>
+                <ul className="mt-6 space-y-3 text-sm text-muted">
+                  {rows.map(([k, a]) => (
+                    <li key={k}>✕ {a}</li>
                   ))}
-                </tbody>
-              </table>
+                </ul>
+              </article>
+              <article className="rounded-[28px] bg-ink p-8 text-white">
+                <h3 className="text-xl font-semibold text-green">{t("compare.us")}</h3>
+                <ul className="mt-6 space-y-3 text-sm">
+                  {rows.map(([k, , b]) => (
+                    <li key={k}>✓ {b}</li>
+                  ))}
+                </ul>
+              </article>
             </div>
           </div>
         </section>
@@ -517,11 +490,17 @@ export function Site() {
           ) : (
             <form
               className="grid gap-3 rounded-[28px] border border-line bg-white p-6 sm:grid-cols-2"
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
-                setSent(true);
+                setSending(true);
+                setFormError(false);
+                const res = await fetch("/api/lead", { method: "POST", body: new FormData(e.currentTarget) });
+                setSending(false);
+                if (res.ok) setSent(true);
+                else setFormError(true);
               }}
             >
+              <input name="company" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
               <label className="text-sm">
                 {t("book.first")}
                 <input required name="first" className="mt-1 w-full rounded-xl border border-line px-3 py-2" />
@@ -549,12 +528,47 @@ export function Site() {
                   ))}
                 </select>
               </label>
-              <button className="rounded-full bg-green py-3 text-sm font-semibold text-white sm:col-span-2">
+              <button disabled={sending} className="rounded-full bg-green py-3 text-sm font-semibold text-white disabled:opacity-60 sm:col-span-2">
                 {t("book.submit")}
               </button>
+              {formError && <p className="text-sm text-red-700 sm:col-span-2">{t("book.error")}</p>}
               <p className="text-xs text-muted sm:col-span-2">{t("book.reply")}</p>
             </form>
           )}
+        </section>
+
+        <section className="overflow-hidden border-t border-line bg-white py-14">
+          <p className="text-center text-sm font-semibold text-green-deep">{t("partners.label")}</p>
+          <h2 className="mt-2 text-center text-3xl font-semibold tracking-tight">{t("partners.title")}</h2>
+          <div className="mt-8 overflow-hidden" dir="ltr">
+            <div className="logo-marquee">
+              {[0, 1].map((copy) => (
+                <ul key={copy} className="flex items-center gap-4 pe-4">
+                  {[
+                    ["afrobica", "Afrobica"],
+                    ["perfyra", "Perfyra"],
+                    ["tasweeri", "Tasweeri"],
+                    ["dive", "Dive Wellness"],
+                    ["taj", "تاج"],
+                    ["dopresso", "Dopresso"],
+                    ["farid", "Farid Hub"],
+                    ["hasobe", "Hasobe"],
+                    ["daskie", "Daskie"],
+                    ["little", "Little Explorers"],
+                    ["poa", "POA QR UAE"],
+                    ["nusuk", "Nusuk"],
+                    ["riser", "Riser"],
+                    ["emesa", "Emesa Art"],
+                    ["velvet", "Velvet"],
+                  ].map(([file, name]) => (
+                    <li key={file + copy} className="flex h-24 w-44 shrink-0 items-center justify-center rounded-2xl border border-line bg-paper px-4">
+                      <img src={`/partners/${file}.png`} alt={name} className="h-14 w-full object-contain" />
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </div>
+          </div>
         </section>
       </main>
 
