@@ -547,7 +547,6 @@ export function Site() {
                   {[
                     ["afrobica", "Afrobica"],
                     ["perfyra", "Perfyra"],
-                    ["tasweeri", "Tasweeri"],
                     ["dive", "Dive Wellness"],
                     ["taj", "تاج"],
                     ["dopresso", "Dopresso"],
@@ -555,8 +554,6 @@ export function Site() {
                     ["hasobe", "Hasobe"],
                     ["daskie", "Daskie"],
                     ["little", "Little Explorers"],
-                    ["poa", "POA QR UAE"],
-                    ["nusuk", "Nusuk"],
                     ["riser", "Riser"],
                     ["emesa", "Emesa Art"],
                     ["velvet", "Velvet"],
