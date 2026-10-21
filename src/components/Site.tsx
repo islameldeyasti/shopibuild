@@ -558,8 +558,8 @@ export function Site() {
                     ["emesa", "Emesa Art"],
                     ["velvet", "Velvet"],
                   ].map(([file, name]) => (
-                    <li key={file + copy} className="flex h-20 w-40 shrink-0 items-center justify-center rounded-2xl border border-line bg-paper px-3">
-                      <img src={`/partners/${file}.png`} alt={name} className="h-12 w-full object-contain" />
+                    <li key={file + copy} className="flex h-24 w-36 shrink-0 items-center justify-center rounded-2xl border border-line bg-paper p-2">
+                      <img src={`/partners/${file}.png`} alt={name} className="h-full w-full object-contain" />
                     </li>
                   ))}
                 </ul>
