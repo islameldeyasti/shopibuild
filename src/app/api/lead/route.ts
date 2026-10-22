@@ -23,13 +23,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: true });
   }
 
-  const first = clean(form.get("first"), 60);
-  const last = clean(form.get("last"), 60);
+  const full = clean(form.get("name"), 80) || `${clean(form.get("first"), 60)} ${clean(form.get("last"), 60)}`.trim();
   const phone = clean(form.get("phone"), 30);
   const site = clean(form.get("site"), 160);
   const spend = clean(form.get("spend"), 80);
+  const stage = clean(form.get("stage"), 40);
 
-  if (first.length < 2 || last.length < 2 || !/^[+\d][\d\s()-]{6,}$/.test(phone) || spend.length < 2) {
+  if (full.length < 2 || !/^[+\d][\d\s()-]{6,}$/.test(phone)) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
 
@@ -37,10 +37,11 @@ export async function POST(request: NextRequest) {
     method: "POST",
     headers: { "Content-Type": "application/json", Accept: "application/json" },
     body: JSON.stringify({
-      name: `${first} ${last}`,
+      name: full,
       phone,
+      stage: stage || "—",
       store: site || "—",
-      monthly_ad_spend_aed: spend,
+      monthly_ad_spend_aed: spend || "—",
       _subject: "طلب مكالمة جديد — ShopiBuild",
       _template: "table",
       _captcha: "false",
