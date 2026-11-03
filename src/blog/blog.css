@@ -1,0 +1,66 @@
+/* Blog: reuses the homepage tokens (home.css). Article text keeps a 16px floor on phones for readability. */
+.blog-hero{padding-block:56px 32px;border-bottom:1px solid var(--line);background:var(--glow),var(--bg)}
+.blog-hero h1{font-size:clamp(28px,4vw,44px);line-height:1.3;max-width:22ch;margin-top:18px}
+.blog-hero .lead{margin-top:14px;font-size:17px}
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:14px;color:var(--muted)}
+.crumbs a{text-decoration:none}
+.crumbs a:hover{color:var(--fg);text-decoration:underline}
+.cat-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.cat-chips a{font-size:14px;font-weight:600;text-decoration:none;background:var(--tagbg);border:1px solid color-mix(in srgb,var(--action) 45%,transparent);border-radius:var(--r-pill);padding:6px 14px}
+.blog-list{padding-block:40px 72px;display:grid;gap:48px}
+.blog-cat{scroll-margin-top:90px}
+.blog-cat h2,.related h2{font-size:clamp(20px,2.4vw,26px);margin-bottom:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{display:grid;gap:10px;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;text-decoration:none;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card h3{font-size:18px;line-height:1.45}
+.card p{font-size:15px;color:var(--muted);line-height:1.7}
+.card .meta{font-size:13px;color:var(--accent);font-weight:600}
+
+.post{max-width:820px;padding-block:40px 72px}
+.post-head{margin-top:18px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.post-head h1{font-size:clamp(28px,4.2vw,42px);line-height:1.35}
+.post-head .lead{margin-top:14px;font-size:18px;max-width:none}
+.post-head .meta{margin-top:14px;font-size:14px;color:var(--muted)}
+.toc{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 24px}
+.toc b{font-size:15px}
+.toc ol{margin:10px 0 0;padding-inline-start:20px;display:grid;gap:6px;font-size:15px}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--fg);text-decoration:underline}
+
+.prose{margin-top:32px;font-size:17px;line-height:1.95}
+.prose>*+*{margin-top:1.05em}
+.prose h2{font-size:clamp(22px,2.8vw,28px);margin-top:1.9em;scroll-margin-top:90px;line-height:1.45}
+.prose h3{font-size:clamp(18px,2.2vw,21px);margin-top:1.5em;line-height:1.5}
+.prose p,.prose li{color:color-mix(in srgb,var(--fg) 88%,var(--muted))}
+.prose ul,.prose ol{padding-inline-start:1.4em;display:grid;gap:.45em}
+.prose a{color:var(--accent);font-weight:600;text-underline-offset:3px}
+.prose strong{color:var(--fg)}
+.prose blockquote{margin-inline:0;padding:16px 20px;background:var(--surface-2);border-inline-start:4px solid var(--action);border-radius:12px}
+.prose blockquote p{color:var(--fg)}
+.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--chip);padding:.1em .4em;border-radius:6px;direction:ltr;unicode-bidi:isolate}
+.prose hr{border:0;border-top:1px solid var(--line);margin-block:2em}
+.prose .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.prose table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.6}
+.prose th,.prose td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top}
+.prose th{background:var(--surface-2);font-weight:700;white-space:nowrap}
+.prose tr:last-child td{border-bottom:0}
+
+.post-cta{margin-top:48px;background:var(--band);color:var(--band-fg);border-radius:var(--r-lg);padding:32px;display:grid;gap:12px;justify-items:start}
+.post-cta h2{font-size:clamp(20px,2.6vw,26px)}
+.post-cta p{color:var(--band-muted);font-size:16px}
+.post-cta .btn{margin-top:6px}
+.related{margin-top:56px}
+
+@media (max-width:720px){
+  .blog-hero{padding-block:36px 24px}
+  .blog-hero .lead,.post-head .lead{font-size:16px}
+  .card h3{font-size:17px}
+  .card p{font-size:15px}
+  .post{padding-block:28px 56px}
+  .prose{font-size:16px;line-height:1.9}
+  .toc ol{font-size:15px}
+  .post-cta{padding:24px}
+  .post-cta p{font-size:15px}
+  .post-cta .btn{font-size:15px}
+}

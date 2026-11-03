@@ -4,6 +4,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { SITE_URL } from "@/site/config";
 import "../globals.css";
 
 const arabic = IBM_Plex_Sans_Arabic({
@@ -29,7 +30,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("title"), description: t("description") };
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: { default: t("title"), template: "%s | ShopiBuild" },
+    description: t("description"),
+  };
 }
 
 export default async function LocaleLayout({
