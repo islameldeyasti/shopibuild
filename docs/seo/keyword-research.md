@@ -133,8 +133,8 @@ Priority: **A** = buying intent or a big gap in the results; **B** = strong comm
 |---|---|---|---|
 | 1 | 1, 2, 3, 6, 11, 17, 24, 28, 32, 33 | Foundation pages and the biggest gaps in Arabic results | Published 3 Nov 2026 |
 | 2 | 4, 5, 7, 12, 13, 18, 25, 29, 34, 38 | Comparisons and pricing | Published 3 Nov 2026 |
-| 3 | 9, 14, 15, 19, 20, 26, 27, 30, 39, 41, 43 | Operations and marketing | Written 3 Nov 2026 |
-| 4 | 8, 10, 21, 22, 23, 31, 35, 36, 40, 45, 46 | Supporting guides | Planned |
+| 3 | 9, 14, 15, 19, 20, 26, 27, 30, 39, 41, 43 | Operations and marketing | Published 3 Nov 2026 |
+| 4 | 8, 10, 21, 22, 23, 31, 35, 36, 40, 45, 46 | Supporting guides | Written 3 Nov 2026 |
 | 5 | 16, 37, 42, 44, 47, 48, 49, 50 | Sectors and advanced topics | Planned |
 
 Publish about one batch every 1–2 weeks rather than all at once, and interlink each new batch with the ones before it.
