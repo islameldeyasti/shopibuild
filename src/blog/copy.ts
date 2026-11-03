@@ -60,8 +60,8 @@ export const BLOG_COPY: Record<
 
 // The blog index lists categories in this order; any new category goes at the end.
 export const CATEGORY_ORDER: Record<Locale, string[]> = {
-  ar: ["البدء في الإمارات", "مقارنة المنصات", "التصميم والعربي", "الدفع والشحن", "SEO و GEO", "التسويق والإعلانات"],
-  en: ["Starting in the UAE", "Platform comparisons", "Design & Arabic", "Payments & shipping", "SEO & GEO", "Marketing & ads"],
+  ar: ["البدء في الإمارات", "مقارنة المنصات", "التصميم والعربي", "الدفع والشحن", "SEO و GEO", "التسويق والإعلانات", "متاجر حسب القطاع"],
+  en: ["Starting in the UAE", "Platform comparisons", "Design & Arabic", "Payments & shipping", "SEO & GEO", "Marketing & ads", "Stores by industry"],
 };
 
 export function formatDate(iso: string, locale: Locale) {
