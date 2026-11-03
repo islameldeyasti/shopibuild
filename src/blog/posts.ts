@@ -26,7 +26,7 @@ export type Post = PostMeta & {
 
 const FAQ_HEADING = /الأسئلة الشائعة|أسئلة شائعة|^FAQ|frequently asked/i;
 
-function parseFrontmatter(raw: string): { data: Record<string, string>; body: string } {
+export function parseFrontmatter(raw: string): { data: Record<string, string>; body: string } {
   const m = raw.match(/^---\n([\s\S]*?)\n---\n?/);
   if (!m) return { data: {}, body: raw };
   const data: Record<string, string> = {};
@@ -65,7 +65,7 @@ function extractFaq(tokens: Token[]) {
   return faq.filter((f) => f.q && f.a);
 }
 
-function render(body: string) {
+export function render(body: string) {
   const headings: { id: string; text: string }[] = [];
   const md = new Marked({ gfm: true });
   md.use({

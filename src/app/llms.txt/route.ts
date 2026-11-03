@@ -1,4 +1,5 @@
 import { getAllPosts } from "@/blog/posts";
+import { getAllLanding } from "@/landing/pages";
 import { SITE_URL, localePath } from "@/site/config";
 
 // llms.txt (llmstxt.org): a plain summary that AI assistants can read and cite.
@@ -9,6 +10,9 @@ export function GET() {
     getAllPosts(locale)
       .map((p) => `- [${p.title}](${SITE_URL}${localePath(locale, `/blog/${p.slug}`)}): ${p.description}`)
       .join("\n");
+  const services = getAllLanding("en")
+    .map((p) => `- [${p.heading}](${SITE_URL}${localePath("en", `/${p.slug}`)}) · [العربية](${SITE_URL}${localePath("ar", `/${p.slug}`)}): ${p.description}`)
+    .join("\n");
 
   const body = `# ShopiBuild
 
@@ -25,8 +29,13 @@ export function GET() {
 ## Main pages
 - [Home (Arabic)](${SITE_URL}/): Shopify store design in the UAE and the Gulf
 - [Home (English)](${SITE_URL}/en): Shopify store design in the UAE and the Gulf
+- [Services (Arabic)](${SITE_URL}/services)
+- [Services (English)](${SITE_URL}/en/services)
 - [Blog (Arabic)](${SITE_URL}/blog)
 - [Blog (English)](${SITE_URL}/en/blog)
+
+## Services and locations
+${services}
 
 ## Guides (English)
 ${list("en")}

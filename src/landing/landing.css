@@ -1,0 +1,22 @@
+/* Service and city landing pages. Builds on blog.css (.post, .prose, .post-cta, .cards). */
+.lp-hero{padding-block:56px 40px;border-bottom:1px solid var(--line);background:var(--glow),var(--bg)}
+.lp-hero .wrap{max-width:900px}
+.lp-tag{margin-top:18px}
+.lp-hero h1{font-size:clamp(30px,4.6vw,50px);line-height:1.3;margin-top:14px;max-width:20ch}
+.lp-hero .lead{margin-top:16px;font-size:18px;max-width:60ch}
+.lp-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.lp-trust{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:15px;color:var(--muted)}
+.lp-trust .tick{color:var(--accent);font-weight:700}
+.lp-body{padding-top:16px}
+.lp-links{margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;padding-top:32px;border-top:1px solid var(--line)}
+.lp-links h2{font-size:18px;margin-bottom:12px}
+.lp-links ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.lp-links a{color:var(--muted);text-decoration:none;font-size:15px}
+.lp-links a:hover{color:var(--fg);text-decoration:underline}
+
+@media (max-width:720px){
+  .lp-hero{padding-block:36px 28px}
+  .lp-hero .lead{font-size:16px}
+  .lp-cta .btn{flex:1;font-size:15px}
+  .lp-trust{font-size:14px}
+}

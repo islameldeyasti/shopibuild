@@ -135,7 +135,7 @@ Priority: **A** = buying intent or a big gap in the results; **B** = strong comm
 | 2 | 4, 5, 7, 12, 13, 18, 25, 29, 34, 38 | Comparisons and pricing | Published 3 Nov 2026 |
 | 3 | 9, 14, 15, 19, 20, 26, 27, 30, 39, 41, 43 | Operations and marketing | Published 3 Nov 2026 |
 | 4 | 8, 10, 21, 22, 23, 31, 35, 36, 40, 45, 46 | Supporting guides | Published 3 Nov 2026 |
-| 5 | 16, 37, 42, 44, 47, 48, 49, 50 | Sectors and advanced topics | Written 3 Nov 2026 |
+| 5 | 16, 37, 42, 44, 47, 48, 49, 50 | Sectors and advanced topics | Published 3 Nov 2026 |
 
 Publish about one batch every 1–2 weeks rather than all at once, and interlink each new batch with the ones before it.
 
@@ -155,3 +155,38 @@ Publish about one batch every 1–2 weeks rather than all at once, and interlink
 2. Create and verify a Google Business Profile for the Dubai office (this matters a lot for "near me" and Maps searches).
 3. List the agency in the Shopify Partner Directory, Clutch and DesignRush. These pages already rank for the English agency searches.
 4. After 4 weeks, re-rank batches 2–5 by actual impressions in Search Console.
+
+## Agency keyword pages (added 4 November 2026)
+
+Searches like "Shopify agency Dubai" or "تصميم متجر شوبيفاي في دبي" are answered by Google with service pages, not articles. These pages target the agency keywords; spelling variants (شوبيفاي / شوبفاي / Shopify, متجر / ستور) are covered inside the same pages, not with separate near-duplicate pages, which Google treats as doorway pages.
+
+### Service pages (`/<slug>` and `/en/<slug>`, listed at `/services`)
+| Slug | Arabic keyword | English keyword |
+|---|---|---|
+| shopify-store-design | تصميم متجر شوبيفاي | Shopify store design |
+| shopify-development | مطور شوبيفاي / برمجة متجر شوبيفاي | Shopify developer Dubai |
+| arabic-shopify-store-design | تصميم متجر شوبيفاي عربي | Arabic Shopify store design |
+| shopify-migration-service | نقل متجر إلى شوبيفاي | Shopify migration UAE |
+| shopify-seo-service | سيو متجر شوبيفاي | Shopify SEO services UAE |
+| shopify-plus-agency | وكالة Shopify Plus دبي | Shopify Plus agency Dubai |
+| shopify-store-redesign | تطوير متجر شوبيفاي | Shopify store redesign |
+
+### City and country pages
+| Slug | Arabic keyword | English keyword | What makes it distinct |
+|---|---|---|---|
+| shopify-agency-dubai | تصميم متجر شوبيفاي في دبي | Shopify agency Dubai | Same-day delivery, e-Trader, Dubai Shopping Festival |
+| shopify-agency-abu-dhabi | تصميم متجر شوبيفاي في أبوظبي | Shopify agency Abu Dhabi | Arabic-first audience, Abu Dhabi licensing, delivery from Dubai |
+| shopify-agency-sharjah | تصميم متجر شوبيفاي في الشارقة | Shopify agency Sharjah | Northern Emirates, SPC free zone, home businesses |
+| shopify-agency-saudi-arabia | تصميم متجر شوبيفاي في السعودية | Shopify agency Saudi Arabia | SAR, 15% VAT, mada, Tamara, Saudi seasons |
+| shopify-agency-kuwait | تصميم متجر شوبيفاي في الكويت | Shopify agency Kuwait | KWD, KNET, no VAT in force |
+| shopify-agency-qatar | تصميم متجر شوبيفاي في قطر | Shopify agency Qatar | QAR, NAPS, no VAT in force |
+| shopify-agency-bahrain | تصميم متجر شوبيفاي في البحرين | Shopify agency Bahrain | BHD, 10% VAT, Benefit, Saudi Eastern Province |
+
+### New supporting articles
+| Slug | Arabic keyword | English keyword |
+|---|---|---|
+| salla-to-shopify | نقل متجر من سلة إلى شوبيفاي | Salla to Shopify migration |
+| shopify-vs-custom-ecommerce | شوبيفاي أم متجر مبرمج خاص | Shopify vs custom ecommerce website |
+| what-does-shopify-agency-do | وكالة شوبيفاي | Shopify agency |
+
+Keywords already owned by existing articles (not duplicated): store cost (`shopify-store-cost-uae`), choosing an agency / "best agency" (`choose-shopify-agency-dubai`), Shopify vs Salla (`shopify-vs-salla`).
