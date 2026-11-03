@@ -49,16 +49,18 @@
 
   /* typing search query */
   var tq=document.getElementById('typeQ');
-  if(!reduce&&tq){var qs=['عطور عود فاخرة دبي','متجر عبايات أونلاين','قهوة مختصة توصيل'],qi=0,ci=tq.textContent.length,del=true;
+  var en=document.documentElement.lang==='en';
+  if(!reduce&&tq){var qs=en?['luxury oud perfume Dubai','online abaya store','specialty coffee delivery']:['عطور عود فاخرة دبي','متجر عبايات أونلاين','قهوة مختصة توصيل'],qi=0,ci=tq.textContent.length,del=true;
     setInterval(function(){var q=qs[qi];if(del){ci--;if(ci<=0){del=false;qi=(qi+1)%qs.length}}else{ci++;if(ci>=qs[qi].length+12)del=true}tq.textContent=qs[qi].slice(0,Math.max(0,Math.min(ci,qs[qi].length)))},90)}
 
-  /* brand slider (RTL: forward = negative scrollLeft) */
+  /* brand slider (RTL: forward = negative scrollLeft, LTR: positive) */
   var tr=document.getElementById('brandTrack'),dots=document.getElementById('brandDots');
   function per(){return innerWidth<=720?2:4}
   function gap(){return per()===2?12:20}
   function pages(){return Math.ceil(tr.children.length/per())}
+  function sign(){return getComputedStyle(tr).direction==='rtl'?-1:1}
   function cur(){return Math.round(Math.abs(tr.scrollLeft)/(tr.clientWidth+gap()))}
-  function go(i){var n=pages();i=(i+n)%n;tr.scrollTo({left:-i*(tr.clientWidth+gap()),behavior:'smooth'})}
+  function go(i){var n=pages();i=(i+n)%n;tr.scrollTo({left:sign()*i*(tr.clientWidth+gap()),behavior:'smooth'})}
   function drawDots(){dots.innerHTML='';for(var i=0;i<pages();i++){var d=document.createElement('button');d.type='button';d.setAttribute('aria-label','صفحة '+(i+1));(function(k){d.onclick=function(){go(k)}})(i);dots.appendChild(d)}mark()}
   function mark(){var c=cur();[].forEach.call(dots.children,function(d,i){d.setAttribute('aria-current',i===c)})}
   if(tr&&dots){
@@ -70,6 +72,22 @@
   var paused=false;['mouseenter','touchstart','focusin'].forEach(function(e){tr.addEventListener(e,function(){paused=true},{passive:true})});
   ['mouseleave','focusout'].forEach(function(e){tr.addEventListener(e,function(){paused=false})});
   if(!reduce){setInterval(function(){if(!paused&&!document.hidden)go(cur()+1)},4000)}
+  }
+
+  if(matchMedia('(max-width:720px)').matches){
+    [].forEach.call(document.querySelectorAll('.apps-wrap .marq'),function(el){
+      el.style.setProperty('animation','none','important');
+      var rev=el.classList.contains('rev');
+      var dur=rev?46000:40000;
+      var t0=null;
+      function tick(now){
+        if(!t0)t0=now;
+        var p=((now-t0)%dur)/dur;
+        el.style.transform='translate3d('+((rev?p-1:-p)*50)+'%,0,0)';
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
   }
 
   var f=document.getElementById('leadForm');
