@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export function HomeCanvas({ html }: { html: string }) {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "/homepage-boot.js?v=5";
+    script.src = "/homepage-boot.js?v=6";
     document.body.appendChild(script);
     return () => {
       script.remove();
