@@ -601,8 +601,8 @@ footer .logo{background:var(--band-accent)}
   .announce br{display:block}
   .display{font-size:23.04px;line-height:1.35}
   .proof{display:flex;flex-direction:column;align-items:center;width:auto;max-width:100%;padding:0;gap:10px;background:none;border:0;box-shadow:none;color:var(--fg)}
-  .proof .avatars{justify-content:center}
-  .proof .avatars span{width:32px;height:32px;margin-left:-8px;border-color:var(--bg,#fff)}
+  .proof .avatars{justify-content:center;background:var(--band);border-radius:var(--r-pill);padding:8px 14px;box-shadow:var(--shadow)}
+  .proof .avatars span{width:32px;height:32px;margin-left:-8px}
   .proof-txt{text-align:center;line-height:1.5}
   .proof-txt .num{color:var(--accent)}
   header.site .wrap{gap:8px}
