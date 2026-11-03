@@ -326,13 +326,14 @@ header.site nav a:hover::after{width:100%}
 .sp-logo svg{width:1.4em;height:1.4em}
 
 /* ===== SHIPPING hub ===== */
-#shipping .stage{--ar:16/8;--mar:1/1.05}
+#shipping .stage{--ar:16/8;--mar:4/3}
+@media (max-width:720px){#shipping .bub{width:calc(var(--s,64px)*.6)!important}#shipping .ful-card{padding:2.2cqw}#shipping .ful-card .tg{white-space:nowrap;font-size:.72em;padding:.15em .6em}}
 .routes{position:absolute;inset:0;width:100%!important;height:100%;z-index:1;left:0!important;top:0!important}
 .routes path{fill:none;stroke:color-mix(in srgb,var(--accent) 55%,transparent);stroke-width:1.6;stroke-dasharray:5 7;animation:dash 1.6s linear infinite;vector-effect:non-scaling-stroke}
 @keyframes dash{to{stroke-dashoffset:-24}}
 .hub{display:grid;justify-items:center;text-align:center;z-index:5}
 .hub .core{width:15cqw;aspect-ratio:1;border-radius:50%;background:var(--band);color:var(--band-fg);display:grid;place-items:center;align-content:center;gap:.2em;box-shadow:0 0 0 1.2cqw color-mix(in srgb,var(--action) 18%,transparent),0 0 0 2.6cqw color-mix(in srgb,var(--action) 8%,transparent),var(--shadow-lg);font-size:clamp(10px,1.3cqw,15px);position:relative}
-@media (max-width:720px){.hub .core{width:30cqw;font-size:3cqw}}
+@media (max-width:720px){.hub .core{width:24cqw;font-size:2.6cqw}}
 .hub .core svg{width:2em;height:2em;color:var(--band-accent)}
 .hub .core::after{content:"";position:absolute;inset:-1.2cqw;border-radius:50%;border:2px solid var(--action);animation:ring 2.4s ease-out infinite}
 @keyframes ring{from{transform:scale(.85);opacity:.9}to{transform:scale(1.35);opacity:0}}
